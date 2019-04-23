@@ -47,11 +47,32 @@ contract Pasuable is Ownable {
 
 //  TODO's: Create a Pausable contract that inherits from the Ownable contract
 //  1) create a private '_paused' variable of type bool
-//  2) create a public setter using the inherited onlyOwner modifier 
-//  3) create an internal constructor that sets the _paused variable to false
-//  4) create 'whenNotPaused' & 'paused' modifier that throws in the appropriate situation
-//  5) create a Paused & Unpaused event that emits the address that triggered the event
+bool private _paused;
 
+//  2) create a public setter using the inherited onlyOwner modifier 
+function pauseUnpauseContract(bool paused) public onlyOwner {
+    _paused = paused;
+    emit ContractPausedUnPaused(paused);
+}
+
+//  3) create an internal constructor that sets the _paused variable to false
+constructor () internal {
+    _paused = false;
+}
+
+//  4) create 'whenNotPaused' & 'paused' modifier that throws in the appropriate situation
+modifier whenNotPaused() {
+    require(_paused == false , "contract is paused");
+    _;
+}
+
+modifier whenPaused() {
+    require(_paused == true , "contract is not paused");
+    _;
+}
+
+//  5) create a Paused & Unpaused event that emits the address that triggered the event
+event ContractPausedUnPaused(bool contractStatus);
 }
 
 
