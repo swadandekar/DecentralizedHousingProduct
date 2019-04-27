@@ -1,3 +1,5 @@
+var HDWalletProvider = require("truffle-hdwallet-provider");
+var mnemonic = "frame banana blood law finger phrase crop talent mandate receive style october";
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -75,17 +77,30 @@ module.exports = {
       // network_id: 2111,   // This network is yours, in the cloud.
       // production: true    // Treats this network as if it was a public net. (default: false)
     // }
-  },
-
+  
+  rinkeby: {
+      provider: function () {
+        var wallet = new HDWalletProvider(MNEMONIC, ENDPOINT)
+        // var nonceTracker = new NonceTrackerSubprovider()
+        // wallet.engine._providers.unshift(nonceTracker)
+        // nonceTracker.setEngine(wallet.engine)
+        return wallet
+      },
+      network_id: 4,
+      // gas: 2000000,   // <--- Twice as much
+      // gasPrice: 10000000000,
+      },
+  
   // Set default mocha options here, use special reporters etc.
   mocha: {
     // timeout: 100000
-  },
+  }
+},
 
   // Configure your compilers
   compilers: {
     solc: {
-      // version: "0.5.1",    // Fetch exact version from solc-bin (default: truffle's version)
+       version: "0.5.2",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
