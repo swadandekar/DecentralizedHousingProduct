@@ -2584,9 +2584,9 @@
           }
         ],
         "contractDependencies": [
-          177,
           131,
-          76
+          76,
+          177
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -9091,10 +9091,10 @@
           }
         ],
         "contractDependencies": [
-          669,
-          177,
           131,
-          76
+          669,
+          76,
+          177
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -12765,10 +12765,10 @@
         ],
         "contractDependencies": [
           967,
-          669,
-          177,
           131,
+          669,
           76,
+          177,
           7443
         ],
         "contractKind": "contract",
@@ -14090,10 +14090,10 @@
         "contractDependencies": [
           967,
           1072,
-          669,
-          177,
           131,
+          669,
           76,
+          177,
           7443
         ],
         "contractKind": "contract",
@@ -16862,9 +16862,9 @@
           }
         ],
         "contractDependencies": [
-          177,
           131,
-          76
+          76,
+          177
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -23369,10 +23369,10 @@
           }
         ],
         "contractDependencies": [
-          669,
-          177,
           131,
-          76
+          669,
+          76,
+          177
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -27043,10 +27043,10 @@
         ],
         "contractDependencies": [
           967,
-          669,
-          177,
           131,
+          669,
           76,
+          177,
           7443
         ],
         "contractKind": "contract",
@@ -28368,10 +28368,10 @@
         "contractDependencies": [
           967,
           1072,
-          669,
-          177,
           131,
+          669,
           76,
+          177,
           7443
         ],
         "contractKind": "contract",
@@ -28919,7 +28919,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-04-25T01:56:07.954Z",
+  "updatedAt": "2019-04-30T00:16:00.717Z",
   "devdoc": {
     "methods": {
       "isApprovedForAll(address,address)": {
