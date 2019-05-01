@@ -528,7 +528,8 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
 
 
     // TODO: Create an internal function to set the tokenURI of a specified tokenId
-    function setTokenURI(uint256 tokenId, string calldata baseTokenURI) external{
+    //string calldata baseTokenURI
+    function setTokenURI(uint256 tokenId ) external{
     
     // It should be the _baseTokenURI + the tokenId in string form
     // TIP #1: use strConcat() from the imported oraclizeAPI lib to set the complete token URI
@@ -536,13 +537,13 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
     // see https://github.com/oraclize/ethereum-api/blob/master/oraclizeAPI_0.5.sol for strConcat()
     // require the token exists before setting
         require (_exists(tokenId)== true, "token does not exists" );
-        _tokenURIs[tokenId] = strConcat(baseTokenURI, uint2str(tokenId) );
+        _tokenURIs[tokenId] = strConcat(_baseTokenURI, uint2str(tokenId) );
     }
     
 
 }
 
-contract ERC721MintableComplete is ERC721Metadata {
+contract ERC721MintableComplete is ERC721Metadata( "Real Estate Project", "Red", "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/") {
 //  TODO's: Create CustomERC721Token contract that inherits from the ERC721Metadata contract. You can name this contract as you please
 //  1) Pass in appropriate values for the inherited ERC721Metadata contract
 //      - make the base token uri: https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/
@@ -553,15 +554,15 @@ contract ERC721MintableComplete is ERC721Metadata {
 //      -calls the superclass mint and setTokenURI functions
 
 
-    constructor (string memory _name, string memory _symbol, string memory _baseTokenURI) 
-    ERC721Metadata(_name, _symbol, _baseTokenURI)
-    public {
-        // TODO: set instance var values      
-    }
+    // constructor (string memory _name, string memory _symbol, string memory _baseTokenURI) 
+    // ERC721Metadata(_name, _symbol, _baseTokenURI)
+    // public {
+    //     // TODO: set instance var values      
+    // }
 
-    function mint(address to, uint256 tokenId, string memory tokenURI) public onlyOwner() returns (bool) {
+    function mint(address to, uint256 tokenId) public onlyOwner() returns (bool) {
         _mint(to, tokenId);
-        this.setTokenURI(tokenId, tokenURI);
+        this.setTokenURI(tokenId);
         //string memory  returnTokenUri = this.tokenURI(tokenId);
         // if(returnTokenUri == tokenURI){
         //     return true;
