@@ -80,15 +80,19 @@ module.exports = {
   
   rinkeby: {
       provider: function () {
-        var wallet = new HDWalletProvider(MNEMONIC, ENDPOINT)
+        var wallet = new HDWalletProvider(mnemonic, 'rinkeby.infura.io/v3/27f24c7786c44aad929b705987a4b201')
         // var nonceTracker = new NonceTrackerSubprovider()
         // wallet.engine._providers.unshift(nonceTracker)
         // nonceTracker.setEngine(wallet.engine)
         return wallet
       },
-      network_id: 4,
+      //network_id: 4,
       // gas: 2000000,   // <--- Twice as much
       // gasPrice: 10000000000,
+      port:8545,
+      network_id: 4,
+      gas: 4500000,
+      gasPrice: 10000000000
       },
   
   // Set default mocha options here, use special reporters etc.

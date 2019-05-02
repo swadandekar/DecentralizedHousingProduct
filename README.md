@@ -19,7 +19,7 @@ To run this project :
 1. npm install
 2. truffle init
 3. truffle compile
-4. truffle test eth-contracts/test/TestERC721Mintable.js
+4. truffle test  test/TestERC721Mintable.js
 5.docker run -v /C:/Swati/BlockChain/Capstone/to/zokrates/zokrates/code:/home/zokrates/code -ti zokrates/zokrates /bin/bash
 
 $ docker run -v /C:/Swati/BlockChain/Capstone/to/zokrates/zokrates/code:/home/zokrates/code -ti zokrates/zokrates /bin/
@@ -80,13 +80,7 @@ removed the preceeding zeros in the input array of proof.json
 truffle compile
 Notice that c is lower case @SwatiD
 
-Chris F.
-
-Mentor
-
-10:50 PM
-
-Profile photo
+ 
 Also, when posting code here, please do this:
 
 Type three backticks (beside the number 1 in a US keyboard. looks like this: `)
@@ -95,13 +89,4 @@ Paste the code.
 Press Shift + Enter.
 Then three tick marks again
 Then press Enter
-Chris F.
-
-Mentor
-
-11:54 PM
-
-Profile photo
-Hi @SwatiD. Updated my instructions a bit. Please scroll up.
-
-Run with `RUST_BACKTRACE=1` environment variable to display a backtrace.
+ 

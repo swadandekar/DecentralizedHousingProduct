@@ -12932,9 +12932,9 @@
           }
         ],
         "contractDependencies": [
-          967,
           131,
           177,
+          967,
           76,
           669,
           7426
@@ -14285,9 +14285,9 @@
           }
         ],
         "contractDependencies": [
-          967,
           131,
           177,
+          967,
           1070,
           76,
           669,
@@ -27025,9 +27025,9 @@
           }
         ],
         "contractDependencies": [
-          967,
           131,
           177,
+          967,
           76,
           669,
           7426
@@ -28378,9 +28378,9 @@
           }
         ],
         "contractDependencies": [
-          967,
           131,
           177,
+          967,
           1070,
           76,
           669,
@@ -28717,7 +28717,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-05-01T23:21:46.934Z",
+  "updatedAt": "2019-05-02T00:16:34.409Z",
   "devdoc": {
     "methods": {
       "isApprovedForAll(address,address)": {
