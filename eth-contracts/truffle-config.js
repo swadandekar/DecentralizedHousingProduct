@@ -1,5 +1,7 @@
 var HDWalletProvider = require("truffle-hdwallet-provider");
-var mnemonic = "frame banana blood law finger phrase crop talent mandate receive style october";
+var mnemonic = "either worry increase noise toddler bamboo essay patch person defense lizard auction"
+//"either worry increase noise toddler bamboo essay patch person defense lizard auction";
+//"frame banana blood law finger phrase crop talent mandate receive style october";
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -80,7 +82,7 @@ module.exports = {
   
   rinkeby: {
       provider: function () {
-        var wallet = new HDWalletProvider(mnemonic, 'rinkeby.infura.io/v3/27f24c7786c44aad929b705987a4b201')
+        var wallet = new HDWalletProvider(mnemonic, 'https://rinkeby.infura.io/v3/27f24c7786c44aad929b705987a4b201')
         // var nonceTracker = new NonceTrackerSubprovider()
         // wallet.engine._providers.unshift(nonceTracker)
         // nonceTracker.setEngine(wallet.engine)

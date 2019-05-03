@@ -43,7 +43,8 @@ contract SolnSquareVerifier is ERC721MintableComplete {
                             uint[2] memory c_p,
                             uint[2] memory h,
                             uint[2] memory k,
-                            uint[2] memory input) public returns (bool) {
+                            uint[2] memory input
+                            ) public returns (bool) {
 
         bytes32  key =  keccak256(abi.encodePacked(a,a_p, b, b_p,c,c_p,h,k));
         require(solutionMap[key].owner == address(0), "Solution already exists");
