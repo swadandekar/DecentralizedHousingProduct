@@ -14,14 +14,14 @@ It is blockchain based decentralized housing product. It allows user to sell the
 * [ZoKrates](https://github.com/Zokrates/ZoKrates)
 
 
-To run this project :
+### Commands to run this project :
 
 1. npm install
 2. truffle init
 3. truffle compile
 4. truffle test  test/TestERC721Mintable.js OR truffle test
 
-Deployment details :
+### Deployment details :
 Following contracts are deployed on Rinkey netwrok
 
 1. Contract 'SolnSquareVerifier' at address 0x10D3C235C52463A4FB9068BA5f8f10A68ECD74Ac
@@ -29,7 +29,7 @@ Following contracts are deployed on Rinkey netwrok
 
 Metamask Account address: 0xFC46844902945a637b08D90d3e9E88f7Cc7071B0
 
-OpenSea details: 
+### OpenSea deployment details: 
 
 The product is accessible on Opensea marketplace with following url. 
 https://rinkeby.opensea.io/assets/realestateproject
