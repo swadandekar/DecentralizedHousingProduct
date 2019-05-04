@@ -12,7 +12,7 @@ It is blockchain based decentralized housing product. It allows user to sell the
 * [Interactive zero knowledge 3-colorability demonstration](http://web.mit.edu/~ezyang/Public/graph/svg.html)
 * [Docker](https://docs.docker.com/install/)
 * [ZoKrates](https://github.com/Zokrates/ZoKrates)
-
+* [MyEtherWallet](https://www.myetherwallet.com/access-my-wallet) This was used to run deloyed Solidity contract and to mint the tokens.
 
 ### Commands to run this project :
 
