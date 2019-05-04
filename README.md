@@ -1,6 +1,6 @@
 # Udacity Blockchain Capstone
 
-It is blockchain based decentralized housing product. It allows user to sell their real estate property with Cryptocurrency on Opensea Market place.
+It is blockchain based decentralized housing product. It allows user to sell their real estate property with Cryptocurrency on Opensea Market place.This project creates ERC721 tokens for real estate titles and uses ZkSNARKs to verify before minting the token. The minted tokens are then put to sale on opensea.
 
 # Project Resources
 
